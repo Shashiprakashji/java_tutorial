@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1d15e1-e8e7-4e09-9468-be8576a75db4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MealItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BurgerMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MealItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MealOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Burger__Restaurant",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/shash/IdeaProjects/Java_Tutorial/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/shash/IdeaProjects/Java_Tutorial/src/Main.java",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="RunManager">
@@ -89,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707234576336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit done">
+      <option name="closed" value="true" />
+      <created>1707241640030</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707241640030</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
