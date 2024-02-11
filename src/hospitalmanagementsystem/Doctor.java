@@ -14,12 +14,12 @@ public class Doctor {
         this.connection=connection;
     }
 
-    public void viewDoctor(){
+    public void viewDoctors(){
         //here we will perform read operation
         String query="select * from doctors";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = preparedStatement.executeQuery(); //here it will hold data
             System.out.println("Doctors: ");
             System.out.println("+------------+--------------------+------------------+");
             System.out.println("| Doctor Id  | Name               | Specialization   |");
@@ -37,18 +37,18 @@ public class Doctor {
         }
     }
 
-    public boolean checkDoctorByID(int id){
-        String query="select * from doctors by id=?";
+    public boolean checkDoctorByID(int id) {
+        String query = "select * from doctors where id=?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()){
+            ResultSet resultSet = preparedStatement.executeQuery(); //hold data
+            if (resultSet.next()) { //check if present data in database
                 return true;
-            }else{
+            } else {
                 return false;
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;

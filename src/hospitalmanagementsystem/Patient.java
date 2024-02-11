@@ -26,7 +26,7 @@ public class Patient {
         //using prepared staement so that user input data
 
         try{
-            String query="INSERT INTO patients(name,age,gender) VALUES(?,?,?)";
+            String query="insert into patients(name,age,gender) values(?,?,?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1,name);
             preparedStatement.setInt(2,age);
@@ -44,7 +44,7 @@ public class Patient {
         }
     }
 
-    public void viewPatient(){
+    public void viewPatients(){
         //here we will perform read operation
         String query="select * from patients";
         try{
@@ -73,7 +73,7 @@ public class Patient {
     }
 
     public boolean checkPatientByID(int id){
-        String query="select * from patients by id=?";
+        String query="select * from patients where id=?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
